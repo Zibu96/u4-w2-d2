@@ -37,11 +37,14 @@ public class Main {
         }
         System.out.println(numeri);
 
-        List<Integer> numeriInversi = new ArrayList<>(numeri.reversed());
 
-        System.out.println(numeriInversi);
+        Main.numeriSecond(numeri);
         Main.pariDispari(numeri, true);
+    }
 
+    public static void numeriSecond(List<Integer> list) {
+        List<Integer> numeriInversi = new ArrayList<>(list.reversed());
+        System.out.println(numeriInversi);
     }
 
     public static void pariDispari(List<Integer> list, Boolean toF) {
